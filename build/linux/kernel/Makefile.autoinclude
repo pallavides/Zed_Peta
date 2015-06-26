@@ -1,0 +1,7 @@
+PROOT:=/home/controls/Pallavi/Peta/Zed_Peta
+INSTANCE:=linux/kernel
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/Makefile.export
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/kernel/Makefile.export
+CONFIGFILE:=/home/controls/Pallavi/Peta/Zed_Peta/subsystems/linux/configs/kernel/config
+dir_linux_kernel_y=/opt/pkg/petalinux-v2014.4-final/components/linux-kernel/xlnx-3.17
+

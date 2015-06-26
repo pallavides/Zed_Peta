@@ -1,0 +1,7 @@
+PROOT:=/home/controls/Pallavi/Peta/Zed_Peta
+INSTANCE:=linux/device-tree
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/Makefile.export
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/device-tree/Makefile.export
+CONFIGFILE:=/home/controls/Pallavi/Peta/Zed_Peta/subsystems/linux/config
+dir_device_tree_y=/opt/pkg/petalinux-v2014.4-final/components/device-tree/device-tree-generator
+

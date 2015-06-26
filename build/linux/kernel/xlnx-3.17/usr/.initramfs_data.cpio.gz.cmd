@@ -1,0 +1,1 @@
+cmd_usr/initramfs_data.cpio.gz := /bin/sh /opt/pkg/petalinux-v2014.4-final/components/linux-kernel/xlnx-3.17/scripts/gen_initramfs_list.sh -o usr/initramfs_data.cpio.gz  -u 0  -g 0  /home/controls/Pallavi/Peta/Zed_Peta/images/linux/rootfs.cpio

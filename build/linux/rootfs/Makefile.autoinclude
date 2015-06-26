@@ -1,0 +1,33 @@
+PROOT:=/home/controls/Pallavi/Peta/Zed_Peta
+INSTANCE:=linux/rootfs
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/Makefile.export
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/rootfs/Makefile.export
+CONFIGFILE:=/home/controls/Pallavi/Peta/Zed_Peta/subsystems/linux/configs/rootfs/config
+dir_rootfs_y=/opt/pkg/petalinux-v2014.4-final/components/rootfs/petalinux-rootfs
+dir_apps_y+=/none/apps/multi/fwupgrade
+depend_apps_y+=$(dir_packages_repo_y)
+depend_apps_y+=$(dir_libs_y)
+dir_apps_y+=/none/apps/multi/peekpoke
+depend_apps_y+=$(dir_packages_repo_y)
+depend_apps_y+=$(dir_libs_y)
+dir_apps_y+=/none/apps/multi/uWeb
+depend_apps_y+=$(dir_packages_repo_y)
+depend_apps_y+=$(dir_libs_y)
+dir_packages_repo_y+=/none/packages-repo/single/plnx-repo
+ifeq ($(dir_libs_y),)
+$(addprefix sub_build_component_,$(dir_libs_y)):$(addprefix sub_build_component_,$(depend_libs_y))
+$(addprefix sub_install_component_,$(dir_libs_y)):$(addprefix sub_install_component_,$(depend_libs_y))
+endif
+ifeq ($(dir_libs_y),)
+$(addprefix sub_build_component_,$(dir_libs_y)):$(addprefix sub_build_component_,$(depend_libs_y))
+$(addprefix sub_install_component_,$(dir_libs_y)):$(addprefix sub_install_component_,$(depend_libs_y))
+endif
+ifeq ($(dir_libs_y),)
+$(addprefix sub_build_component_,$(dir_libs_y)):$(addprefix sub_build_component_,$(depend_libs_y))
+$(addprefix sub_install_component_,$(dir_libs_y)):$(addprefix sub_install_component_,$(depend_libs_y))
+endif
+ifeq ($(dir_libs_y),)
+$(addprefix sub_build_component_,$(dir_libs_y)):$(addprefix sub_build_component_,$(depend_libs_y))
+$(addprefix sub_install_component_,$(dir_libs_y)):$(addprefix sub_install_component_,$(depend_libs_y))
+endif
+

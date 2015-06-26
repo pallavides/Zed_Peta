@@ -1,0 +1,7 @@
+PROOT:=/home/controls/Pallavi/Peta/Zed_Peta
+INSTANCE:=linux/bootloader
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/Makefile.export
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/bootloader/Makefile.export
+CONFIGFILE:=/home/controls/Pallavi/Peta/Zed_Peta/subsystems/linux/config
+dir_bootloader_y=/home/controls/Pallavi/Peta/Zed_Peta/components/bootloader/zynq_fsbl
+

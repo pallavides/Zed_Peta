@@ -1,0 +1,1 @@
+/home/controls/Pallavi/Peta/Zed_Peta/build/linux/rootfs/stage/usr/sbin/update-rc.d

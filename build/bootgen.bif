@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader] /tmp/tmp.zepzRbI2Cv/zynq_fsbl.elf
+	/tmp/tmp.zepzRbI2Cv/TAIGA_wrapper.bit
+	/tmp/tmp.zepzRbI2Cv/u-boot.elf
+}

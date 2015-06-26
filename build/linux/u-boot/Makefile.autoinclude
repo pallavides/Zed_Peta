@@ -1,0 +1,7 @@
+PROOT:=/home/controls/Pallavi/Peta/Zed_Peta
+INSTANCE:=linux/u-boot
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/Makefile.export
+-include /home/controls/Pallavi/Peta/Zed_Peta/build/linux/u-boot/Makefile.export
+CONFIGFILE:=/home/controls/Pallavi/Peta/Zed_Peta/subsystems/linux/config
+dir_u_boot_y=/opt/pkg/petalinux-v2014.4-final/components/u-boot/u-boot-plnx
+

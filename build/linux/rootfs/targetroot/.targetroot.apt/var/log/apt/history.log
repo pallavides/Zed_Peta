@@ -1,0 +1,10 @@
+
+Start-Date: 2015-06-17  14:10:55
+Commandline: apt-get install busybox gdbserver init-ifupdown base-files initscripts-functions busybox-inetd sysvinit-pidof sysvinit libgcc-s1 initscripts busybox-mdev netbase busybox-udhcpc libc6 modutils-initscripts update-rc.d mtd-utils sysvinit-inittab update-alternatives-opkg base-passwd --force-yes --allow-unauthenticated
+Install: base-files:armv7a-vfp-neon (3.0.14-r89), update-alternatives-opkg:armv7a-vfp-neon (0.1.8+git0+eae0d8fa44-r0), modutils-initscripts:armv7a-vfp-neon (1.0-r7), sysvinit-inittab:armv7a-vfp-neon (2.88dsf-r10), init-ifupdown:armv7a-vfp-neon (1.0-r7), initscripts-functions:armv7a-vfp-neon (1.0-r155), netbase:armv7a-vfp-neon (5.2-r0), busybox-inetd:armv7a-vfp-neon (1.22.1-r32), sysvinit-pidof:armv7a-vfp-neon (2.88dsf-r14), base-passwd:armv7a-vfp-neon (3.5.29-r0), mtd-utils:armv7a-vfp-neon (1.5.1+git0+9f107132a6-r0), update-rc.d:armv7a-vfp-neon (0.7-r5), libgcc-s1:armv7a-vfp-neon (4.8.3-r1), gdbserver:armv7a-vfp-neon (7.7.50.20140217-cvs-r1), busybox-mdev:armv7a-vfp-neon (1.22.1-r32), libc6:armv7a-vfp-neon (2.18-r1), initscripts:armv7a-vfp-neon (1.0-r155), busybox-udhcpc:armv7a-vfp-neon (1.22.1-r32), sysvinit:armv7a-vfp-neon (2.88dsf-r14), busybox:armv7a-vfp-neon (1.22.1-r32)
+End-Date: 2015-06-17  14:11:19
+
+Start-Date: 2015-06-17  14:11:19
+Commandline: apt-get install run-postinsts --force-yes --allow-unauthenticated
+Install: run-postinsts:armv7a-vfp-neon (1.0-r9)
+End-Date: 2015-06-17  14:11:21

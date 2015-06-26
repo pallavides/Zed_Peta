@@ -1,0 +1,152 @@
+processor:
+    ps7_cortexa9_0:
+        arch: arm
+        ip_name: ps7_cortexa9
+        slaves_strings: axi_fifo_production axi_gpio_production_controller_out ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0
+        slaves:
+            ps7_ddr_0_bankless:
+                device_type: memory
+                ip_name: ps7_ddr
+                baseaddr: 0x0
+                highaddr: 0x1FFFFFFF
+            ps7_uart_1:
+                device_type: serial
+                ip_name: ps7_uart
+            ps7_ethernet_0:
+                device_type: ethernet
+                ip_name: ps7_ethernet
+            ps7_qspi_0_bankless:
+                device_type: flash
+                ip_name: ps7_qspi
+            ps7_sd_0:
+                device_type: sd
+                ip_name: ps7_sdio
+            axi_fifo_production:
+                ip_name: axi_fifo_mm_s
+            axi_gpio_production_controller_out:
+                ip_name: axi_gpio
+            ps7_afi_0:
+                ip_name: ps7_afi
+            ps7_afi_1:
+                ip_name: ps7_afi
+            ps7_afi_2:
+                ip_name: ps7_afi
+            ps7_afi_3:
+                ip_name: ps7_afi
+            ps7_coresight_comp_0:
+                ip_name: ps7_coresight_comp
+            ps7_ddr_0:
+                ip_name: ps7_ddr
+            ps7_ddrc_0:
+                ip_name: ps7_ddrc
+            ps7_dev_cfg_0:
+                ip_name: ps7_dev_cfg
+            ps7_dma_ns:
+                ip_name: ps7_dma
+            ps7_dma_s:
+                ip_name: ps7_dma
+            ps7_globaltimer_0:
+                ip_name: ps7_globaltimer
+            ps7_gpv_0:
+                ip_name: ps7_gpv
+            ps7_intc_dist_0:
+                ip_name: ps7_intc_dist
+            ps7_iop_bus_config_0:
+                ip_name: ps7_iop_bus_config
+            ps7_l2cachec_0:
+                ip_name: ps7_l2cachec
+            ps7_ocmc_0:
+                ip_name: ps7_ocmc
+            ps7_pl310_0:
+                ip_name: ps7_pl310
+            ps7_pmu_0:
+                ip_name: ps7_pmu
+            ps7_qspi_0:
+                ip_name: ps7_qspi
+            ps7_qspi_linear_0:
+                ip_name: ps7_qspi_linear
+            ps7_ram_0:
+                ip_name: ps7_ram
+            ps7_ram_1:
+                ip_name: ps7_ram
+            ps7_scuc_0:
+                ip_name: ps7_scuc
+            ps7_scugic_0:
+                ip_name: ps7_scugic
+            ps7_scutimer_0:
+                ip_name: ps7_scutimer
+            ps7_scuwdt_0:
+                ip_name: ps7_scuwdt
+            ps7_slcr_0:
+                ip_name: ps7_slcr
+            ps7_ttc_0:
+                ip_name: ps7_ttc
+            ps7_usb_0:
+                ip_name: ps7_usb
+            ps7_xadc_0:
+                ip_name: ps7_xadc
+    IO_intermediary:
+        arch: microblaze
+        ip_name: microblaze
+        slaves_strings: IO_intermediary_local_memory_dlmb_bram_if_cntlr IO_intermediary_local_memory_ilmb_bram_if_cntlr axi_fifo_IOI axi_gpio_IOI_in axi_gpio_IOI_out axi_gpio_trigger axi_intc_IO_intermediary axi_quad_spi_plant axi_supervisory_uart axi_wdt_IOI
+        linux_kernel_properties:
+            XILINX_MICROBLAZE0_FAMILY: zynq string
+            XILINX_MICROBLAZE0_USE_MSR_INSTR: 0 int
+            XILINX_MICROBLAZE0_USE_PCMP_INSTR: 0 int
+            XILINX_MICROBLAZE0_USE_BARREL: 1 int
+            XILINX_MICROBLAZE0_USE_DIV: 0 int
+            XILINX_MICROBLAZE0_USE_HW_MUL: 0 int
+            XILINX_MICROBLAZE0_USE_FPU: 1 int
+            XILINX_MICROBLAZE0_HW_VER: 9.5 string
+        slaves:
+            axi_gpio_IOI_in:
+                device_type: reset_gpio
+                ip_name: axi_gpio
+            axi_gpio_IOI_out:
+                device_type: reset_gpio
+                ip_name: axi_gpio
+            axi_gpio_trigger:
+                device_type: reset_gpio
+                ip_name: axi_gpio
+            IO_intermediary_local_memory_dlmb_bram_if_cntlr:
+                ip_name: lmb_bram_if_cntlr
+            IO_intermediary_local_memory_ilmb_bram_if_cntlr:
+                ip_name: lmb_bram_if_cntlr
+            axi_fifo_IOI:
+                ip_name: axi_fifo_mm_s
+            axi_intc_IO_intermediary:
+                ip_name: axi_intc
+            axi_quad_spi_plant:
+                ip_name: axi_quad_spi
+            axi_supervisory_uart:
+                ip_name: axi_uartlite
+            axi_wdt_IOI:
+                ip_name: axi_timebase_wdt
+    backup_controller:
+        arch: microblaze
+        ip_name: microblaze
+        slaves_strings: axi_fifo_backup axi_gpio_backup_controller_out axi_intc_backup_controller axi_timer_backup_controller backup_controller_local_memory_dlmb_bram_if_cntlr backup_controller_local_memory_ilmb_bram_if_cntlr
+        linux_kernel_properties:
+            XILINX_MICROBLAZE0_FAMILY: zynq string
+            XILINX_MICROBLAZE0_USE_MSR_INSTR: 0 int
+            XILINX_MICROBLAZE0_USE_PCMP_INSTR: 0 int
+            XILINX_MICROBLAZE0_USE_BARREL: 1 int
+            XILINX_MICROBLAZE0_USE_DIV: 0 int
+            XILINX_MICROBLAZE0_USE_HW_MUL: 0 int
+            XILINX_MICROBLAZE0_USE_FPU: 1 int
+            XILINX_MICROBLAZE0_HW_VER: 9.5 string
+        slaves:
+            axi_timer_backup_controller:
+                device_type: timer
+                ip_name: axi_timer
+            axi_gpio_backup_controller_out:
+                device_type: reset_gpio
+                ip_name: axi_gpio
+            axi_fifo_backup:
+                ip_name: axi_fifo_mm_s
+            axi_intc_backup_controller:
+                ip_name: axi_intc
+            backup_controller_local_memory_dlmb_bram_if_cntlr:
+                ip_name: lmb_bram_if_cntlr
+            backup_controller_local_memory_ilmb_bram_if_cntlr:
+                ip_name: lmb_bram_if_cntlr
