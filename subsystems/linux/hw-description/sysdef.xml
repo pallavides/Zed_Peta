@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="1">
+	<TOOL_VERSION Version="2015.1"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="em.avnet.com:zed:1.3" PART="xc7z020clg484-1" ARCH="zynq" PACKAGE="clg484" DEVICE="7z020" SPEED="-1" LUT="53200" FF="106400" BRAM="140" DSP="220"/>
+	<HIERARCHY Name="TAIGA_wrapper"/>
+	<File Type="HW_HANDOFF" Name="TAIGA.hwh" DESIGN_HIERARCHY="TAIGA_i" BD_TYPE="DEFAULT_BD"/>
+	<File Type="BD_TCL" Name="TAIGA_bd.tcl"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.c"/>
+	<File Type="PS_FSBL_INIT" Name="ps7_init.h"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.c"/>
+	<File Type="PS_FSBL_INIT_GPL" Name="ps7_init_gpl.h"/>
+	<File Type="PS_XMD_INIT" Name="ps7_init.tcl"/>
+	<File Type="PS_INIT_HELP" Name="ps7_init.html"/>
+	<File Type="BIT" Name="TAIGA_wrapper.bit"/>
+	<File Type="MMI" Name="TAIGA_wrapper.mmi"/>
+	<USEDRESOURCES LUT="8472" FF="7573" BRAM="36" DSP="4"/>
+</Project>
+
